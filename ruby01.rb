@@ -227,11 +227,13 @@ end
 (3..5).each  { puts "Oj" }
 
 y = 1
+x = 78
 1.upto(5) do |x|
   y += 1
   redo if (y<10 and x==3)
   puts "Hello " + x.to_s + " " + y.to_s
 end
+puts "Ipsilon je:" + y.to_s + " Iks je:" + x.to_s
 
 ar = [1,2,3,4, "aa"]
 puts ar.length
@@ -246,5 +248,6 @@ niz = ['a', 'b', 4]
 niz.each_with_index do |val, ind|
   puts "niz[#{ind}]=#{val}"
 end
-
+num = 1
 1.upto(4) {|num| puts num.to_s}
+puts num
